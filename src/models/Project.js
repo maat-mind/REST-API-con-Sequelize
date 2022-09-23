@@ -27,7 +27,7 @@ export const Project = sequelize.define(
 
 Project.hasMany(Task, {
   foreignKey: 'projectId',
-  sourceKey: id,
+  sourceKey: 'id',
 })
 
 Task.belongsTo(Project, {

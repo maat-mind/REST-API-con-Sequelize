@@ -3,7 +3,7 @@ import projectRoutes from './routes/projects.routes.js'
 
 const app = express()
 
-// middlewares
+// middleware
 app.use(express.json())
 
 app.use(projectRoutes)
